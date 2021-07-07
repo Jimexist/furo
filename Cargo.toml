@@ -6,5 +6,6 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rocket = "0.5.0-rc.1"
+rocket = { version = "0.5.0-rc.1", features = ["json"] }
 datafusion = { git = "https://github.com/apache/arrow-datafusion", rev ="fdf41ad509ddc63e9bbd422768eff9810dea4da4" }
+serde = { version = "1.0" }
